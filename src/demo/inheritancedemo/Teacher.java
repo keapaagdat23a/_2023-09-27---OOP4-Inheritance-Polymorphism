@@ -10,4 +10,8 @@ public class Teacher extends Person {
   public void giveLecture() {
     System.out.println("Giving lecture.");
   }
+
+  public void talk() {
+    System.out.println("Teacher talking ...");
+  }
 }

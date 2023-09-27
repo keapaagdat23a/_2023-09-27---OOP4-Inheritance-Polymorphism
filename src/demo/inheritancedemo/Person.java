@@ -11,4 +11,7 @@ public abstract class Person {
     this.name = name;
   }
 
+  public void talk() {
+    System.out.println("Person talking ...");
+  }
 }

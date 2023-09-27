@@ -12,6 +12,6 @@ public abstract class Animal {
   }
 
   public void play() {
-    System.out.println("Playing.");
+    System.out.println("Animal playing.");
   }
 }

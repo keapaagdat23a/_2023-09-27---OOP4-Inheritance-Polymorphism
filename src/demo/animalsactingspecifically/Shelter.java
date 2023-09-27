@@ -6,7 +6,7 @@ public class Shelter {
   }
 
   private void run() {
-    Animal a = new Animal();
+    // Animal a = new Animal();
     // a.play();
 
     Dog d = new Dog();

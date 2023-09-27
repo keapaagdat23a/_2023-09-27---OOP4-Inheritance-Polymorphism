@@ -19,5 +19,12 @@ public class School {
     t.giveLecture();
     s1.doHomework();
     s2.doHomework();
+
+    System.out.println("TALK");
+    t.talk();
+    s1.talk();
+    s2.talk();
+    Person p = new Student("Sarah");
+    p.talk();
   }
 }

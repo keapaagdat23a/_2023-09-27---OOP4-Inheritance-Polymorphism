@@ -10,4 +10,9 @@ public class Student extends Person {
   public void doHomework() {
     System.out.println("Doing homework.");
   }
+
+  @Override
+  public void talk() {
+    System.out.println("Student talking ...");
+  }
 }
