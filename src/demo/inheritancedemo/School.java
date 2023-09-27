@@ -6,10 +6,11 @@ public class School {
   }
 
   private void run() {
+    // Person p = new Person(); - It's abstract!
     Teacher t = new Teacher("Pat");
     Student s1 = new Student("Brianna");
     Student s2 = new Student("Anna");
-    Person p = new Person("The Person");
+    // Person p = new Person("The Person");
 
     System.out.println(t.getName());
     System.out.println(s1.getName());

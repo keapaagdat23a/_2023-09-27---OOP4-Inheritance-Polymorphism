@@ -1,6 +1,6 @@
 package demo.animalsactingspecifically;
 
-public class Animal {
+public abstract class Animal {
   private String name;
 
   public void setName(String name) {
