@@ -1,5 +1,7 @@
 package demo.inheritancedemo;
 
+import java.util.ArrayList;
+
 public class School {
   public static void main(String[] args) {
     new School().run();
@@ -24,7 +26,26 @@ public class School {
     t.talk();
     s1.talk();
     s2.talk();
-    Person p = new Student("Sarah");
+
+    Person p = new Student("Sarah"); // Hmm ...
     p.talk();
+
+
+    // Delopgave 3
+    System.out.println("\nDELOPGAVE 3\n");
+
+    ArrayList<Person> persons = new ArrayList<>();
+    persons.add(s1);
+    persons.add(t);
+    persons.add(s2);
+
+    for (int i = 0; i < persons.size(); i++) {
+      System.out.println(persons.get(i).getName() + ": ");
+      persons.get(i).talk();
+      if (persons.get(i) instanceof Student)
+        ((Student) persons.get(i)).doHomework();
+      if (persons.get(i) instanceof Teacher)
+        ((Teacher) persons.get(i)).giveLecture();
+    }
   }
 }
